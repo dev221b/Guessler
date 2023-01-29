@@ -42,7 +42,7 @@ function handleMouseClick(e){
 }
 
 function submitGuess() {
-    const guess = document.getElementById("one").value
+    const guess = document.getElementById("guess").value
     console.log(guess)
     console.log(person)
     if (guess === person) {

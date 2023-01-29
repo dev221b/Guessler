@@ -9,9 +9,8 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="header">
-        <h3>Guessler</h3>
-    </div>
+    <h4>Guessler</h4>
+    
     <div class="game-board">
         <div data-alert-container class="alert-container">
         </div>
@@ -24,23 +23,14 @@
             <div class="hint"><h2></h2></div>
             <div class="hint"><h2></h2></div>
         </div>
-        <div data-keyboard class="guesses">
-            <input type="text" class="guess"  id="one">
-            <input type="text" class="guess">
-            <input type="text" class="guess">
-            <input type="text" class="guess">
-            <input type="text" class="guess">
-            <input type="text" class="guess">
-            <input type="text" class="guess">
-        </div>
-        <div class="submission">
-            <button data-enter class="submit">Guess</button>
-            <button data-enter class="submit">Guess</button>
-            <button data-enter class="submit">Guess</button>
-            <button data-enter class="submit">Guess</button>
-            <button data-enter class="submit">Guess</button>
-            <button data-enter class="submit">Guess</button>
-            <button data-enter class="submit">Guess</button>
+        <div class="result">
+            <div class="image">
+                <img src="person.png" alt="">
+            </div>
+             <div class="submission">
+                <input type="text" id="guess"> 
+                <button data-enter class="guess-submit">Guess</button>           
+             </div>
         </div>
     </div>
 </body>
