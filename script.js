@@ -21,7 +21,8 @@ for (var i = 0; i<dict[person].length;i++){
     hints[i] = dict[person][i]
 }
 const alertContainer = document.querySelector("[data-alert-container]")
-
+document.getElementById("1").innerHTML = hints[0]
+var counter = 1
 
 startInteraction()
 
@@ -50,10 +51,23 @@ function submitGuess() {
         return
     }
     else {
-        showAlert("Nope")
-        return
+        if(counter >= 7){
+            stopInteraction()
+            showAlert(person)
+        }
+        counter = counter + 1
+        const index = counter.toString()
+        console.log(index)
+        document.getElementById(index).innerHTML = addHint(index)
+        startInteraction()
     }
 }
+
+function addHint(i) {
+    const s = hints[i-1]
+    return s
+}
+
 function showAlert(message, duration = 1000) {
     const alert = document.createElement("div")
     alert.textContent = message
