@@ -9,12 +9,13 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <h4>Guessler</h4>
+    <h4>Guessler !</h4>
     
     <div class="game-board">
         <div data-alert-container class="alert-container">
         </div>
         <div class="hints">
+            <p>Hints :</p>
             <div class="hint" id="1"><h2></h2></div>
             <div class="hint" id="2"><h2></h2></div>
             <div class="hint" id="3"><h2></h2></div>
@@ -25,10 +26,11 @@
         </div>
         <div class="result">
             <div class="image">
-                <img src="person.png" alt="">
+                <img src="person.png" alt=""  id="pic">
             </div>
+            <h5>Guess this famous personality<br><u>(Hints on the right)</u></h5>
              <div class="submission">
-                <input type="text" id="guess"> 
+                <input type="text" id="guess" onfocus="this.value=''"> 
                 <button data-enter class="guess-submit">Guess</button>           
              </div>
         </div>
