@@ -19,7 +19,7 @@ const dict = {
             ]
             }
 const people = ["obama", "gandhi"]
-const person = people[1]
+const person = people[0]
 var hints = []
 for (var i = 0; i<dict[person].length;i++){
     hints[i] = dict[person][i]
